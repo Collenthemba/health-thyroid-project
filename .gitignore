@@ -1,0 +1,23 @@
+# Raw data — everyone downloads this locally instead of committing it
+data/*.csv
+*.csv
+!outputs/cleaning_log.csv
+!outputs/model_results.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
