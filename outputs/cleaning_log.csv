@@ -1,0 +1,29 @@
+column,missing_before,missing_after,action
+age,0,0,median imputed
+sex,307,0,mode imputed
+on_thyroxine,0,0,mode imputed
+query_on_thyroxine,0,0,mode imputed
+on_antithyroid_medication,0,0,mode imputed
+sick,0,0,mode imputed
+pregnant,0,0,mode imputed
+thyroid_surgery,0,0,mode imputed
+I131_treatment,0,0,mode imputed
+query_hypothyroid,0,0,mode imputed
+query_hyperthyroid,0,0,mode imputed
+lithium,0,0,mode imputed
+goitre,0,0,mode imputed
+tumor,0,0,mode imputed
+hypopituitary,0,0,mode imputed
+psych,0,0,mode imputed
+TSH_measured,0,0,mode imputed
+TSH,842,0,median imputed
+T3_measured,0,0,mode imputed
+T3,2604,0,median imputed
+TT4_measured,0,0,mode imputed
+TT4,442,0,median imputed
+T4U_measured,0,0,mode imputed
+T4U,809,0,median imputed
+FTI_measured,0,0,mode imputed
+FTI,802,0,median imputed
+referral_source,0,0,mode imputed
+has_thyroid_condition,0,0,target created from class
