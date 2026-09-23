@@ -1,29 +1,34 @@
 column,missing_before,missing_after,action
-age,0,0,median imputed
-sex,307,0,mode imputed
-on_thyroxine,0,0,mode imputed
-query_on_thyroxine,0,0,mode imputed
-on_antithyroid_medication,0,0,mode imputed
-sick,0,0,mode imputed
-pregnant,0,0,mode imputed
-thyroid_surgery,0,0,mode imputed
-I131_treatment,0,0,mode imputed
-query_hypothyroid,0,0,mode imputed
-query_hyperthyroid,0,0,mode imputed
-lithium,0,0,mode imputed
-goitre,0,0,mode imputed
-tumor,0,0,mode imputed
-hypopituitary,0,0,mode imputed
-psych,0,0,mode imputed
-TSH_measured,0,0,mode imputed
-TSH,842,0,median imputed
-T3_measured,0,0,mode imputed
-T3,2604,0,median imputed
-TT4_measured,0,0,mode imputed
-TT4,442,0,median imputed
-T4U_measured,0,0,mode imputed
-T4U,809,0,median imputed
-FTI_measured,0,0,mode imputed
-FTI,802,0,median imputed
-referral_source,0,0,mode imputed
+age,4,0,invalid ages set missing; median imputed; stored as integer
+sex,307,0,"mode imputed; encoded F=0, M=1"
+on_thyroxine,0,0,encoded t/f to 1/0
+query_on_thyroxine,0,0,encoded t/f to 1/0
+on_antithyroid_medication,0,0,encoded t/f to 1/0
+sick,0,0,encoded t/f to 1/0
+pregnant,0,0,unrealistic flags set to 0; encoded t/f to 1/0
+thyroid_surgery,0,0,encoded t/f to 1/0
+I131_treatment,0,0,encoded t/f to 1/0
+query_hypothyroid,0,0,encoded t/f to 1/0
+query_hyperthyroid,0,0,encoded t/f to 1/0
+lithium,0,0,encoded t/f to 1/0
+goitre,0,0,encoded t/f to 1/0
+tumor,0,0,encoded t/f to 1/0
+hypopituitary,0,0,encoded t/f to 1/0
+psych,0,0,encoded t/f to 1/0
+TSH_measured,0,0,encoded t/f to 1/0
+TSH,842,0,clipped to 0.005-150; then median imputed
+T3_measured,0,0,encoded t/f to 1/0
+T3,2604,0,clipped to 0.1-10; then median imputed
+TT4_measured,0,0,encoded t/f to 1/0
+TT4,442,0,clipped to 5-300; then median imputed
+T4U_measured,0,0,encoded t/f to 1/0
+T4U,809,0,clipped to 0.3-2.0; then median imputed
+FTI_measured,0,0,encoded t/f to 1/0
+FTI,802,0,clipped to 10-400; then median imputed
+referral_source_other,0,0,one-hot encoded from referral_source
+referral_source_SVI,0,0,one-hot encoded from referral_source
+referral_source_SVHC,0,0,one-hot encoded from referral_source
+referral_source_STMW,0,0,one-hot encoded from referral_source
+referral_source_SVHD,0,0,one-hot encoded from referral_source
+referral_source_WEST,0,0,one-hot encoded from referral_source
 has_thyroid_condition,0,0,target created from class

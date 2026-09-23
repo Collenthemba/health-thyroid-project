@@ -4,6 +4,9 @@ data/*.csv
 !outputs/cleaning_log.csv
 !outputs/model_results.csv
 !outputs/thyroid_cleaned.csv
+!outputs/thyroid_train_balanced.csv
+!outputs/thyroid_test.csv
+!outputs/feature_importances.csv
 
 # Jupyter
 .ipynb_checkpoints/
