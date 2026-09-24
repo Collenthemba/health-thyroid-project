@@ -41,6 +41,17 @@ demographic and clinical indicators, using the UCI Thyroid Disease dataset (`thy
 3. Open `notebooks/thyroid_starter_pipeline.ipynb` in Jupyter or Google Colab.
 4. Run all cells top to bottom.
 
+## Prediction form
+
+After the model has been trained (`outputs/best_thyroid_model.joblib`):
+
+```
+python -m pip install streamlit
+python -m streamlit run app.py
+```
+
+A browser form opens. Enter one patient's age, sex, labs, and clinical flags, then click **Predict**.
+
 ## Contributing
 
 - Pull the latest changes before you start working: `git pull`
