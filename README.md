@@ -50,7 +50,7 @@ python -m pip install streamlit
 python -m streamlit run app.py
 ```
 
-A browser form opens. Enter one patient's age, sex, labs, and clinical flags, then click **Predict**.
+A browser form opens at `http://localhost:8501`. Patient and lab boxes start empty — fill them in yourself, then click **Predict**. Optional clinical history sits in a collapsed section. Demo patients are available if you want a ready-made example.
 
 ## Contributing
 
